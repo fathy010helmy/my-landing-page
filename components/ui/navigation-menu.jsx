@@ -11,12 +11,12 @@ function NavigationMenu({ className, ...props }) {
   return (
     <nav className={cn("fixed top-0 w-full shadow-md bg-gray-800 text-white", className)} {...props}>
       <div className="container mx-auto flex items-center justify-between p-4">
-        {/* زر الهامبرغر في الهواتف */}
+      
         <button className="lg:hidden" onClick={() => setIsOpen(!isOpen)}>
           {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
 
-        {/* القائمة الأساسية */}
+      
         <div className={`lg:flex lg:items-center lg:space-x-4 ${isOpen ? "block" : "hidden"} w-full lg:w-auto`}>
           <NavigationMenuItem href="/" icon={Home}>Home</NavigationMenuItem>
           <NavigationMenuItem href="/about" icon={Info}>About</NavigationMenuItem>
@@ -36,7 +36,7 @@ function NavigationMenu({ className, ...props }) {
           <NavigationMenuItem href="/pricing" icon={DollarSign}>Pricing</NavigationMenuItem>
         </div>
 
-        {/* أزرار تسجيل الدخول والتسجيل */}
+        
         <div className={`lg:flex ${isOpen ? "block" : "hidden"} space-x-4`}>
           <Link href="/login" className="px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition">
             Login

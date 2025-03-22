@@ -1,16 +1,13 @@
-# تجاهل مجلدات غير ضرورية
+
 node_modules/
 .next/
 dist/
 build/
-.turbo/
 
-# تجاهل ملفات البيئة
 .env
 .env.local
 .env.development
 .env.production
 
-# تجاهل ملفات الأنظمة
 .DS_Store
 Thumbs.db

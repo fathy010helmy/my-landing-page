@@ -30,7 +30,7 @@ export default function Home() {
         Build amazing UI with shadcn/ui and Tailwind CSS.
       </TypographyP>
 
-      {/* استدعاء كارد النموذج */}
+      
       <div className="w-full flex justify-center mt-8">
         <CardWithForm />
       </div>
